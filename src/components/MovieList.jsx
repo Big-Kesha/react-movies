@@ -4,9 +4,9 @@ function MovieList(props) {
   
   const {movies} = props;
 
-  console.log(movies)
+ 
   return(
-    <MovieList>
+    <div className="movieList">
       {movies.map((movie) => (
         <MovieCard key={movie.imdbID}
           title={movie.Title} 
@@ -14,7 +14,7 @@ function MovieList(props) {
           poster={movie.Poster} 
           />
       ))} 
-    </MovieList>
+    </div>
   )
 }
 

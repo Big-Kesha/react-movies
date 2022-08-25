@@ -16,12 +16,15 @@ nav {
   padding: 1.5rem 0;
 }
 
-movieList {
+.movieList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.card {
+  flex-basis: 33.3%;
+}
 
 .card-image {
   max-width: 15rem;
