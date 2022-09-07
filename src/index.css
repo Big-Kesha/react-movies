@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,16 +16,35 @@ nav {
 }
 
 .movieList {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 2rem;
+}
+
+.flexcard {
+  border-radius: 2px;
+  font-size: 1.5vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.card {
-  flex-basis: 33.3%;
+.card-image {
+  l: 1;
 }
 
-.card-image {
-  max-width: 15rem;
-  margin: 1rem;
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}
+.filters {
+  display: grid;
+  grid-template-columns: 15% 20% 20%;
+  margin-bottom: 1rem;
 }
