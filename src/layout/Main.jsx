@@ -20,7 +20,11 @@ class Main extends React.Component {
           movies: data.Search,
           loading: false,
         })
-      );
+      )
+      .catch((err) => {
+        console.error(err);
+        this.setState({ loading: false });
+      });
   }
 
   handleSearch = (searchValue, movieType = "all") => {
@@ -32,7 +36,11 @@ class Main extends React.Component {
           movies: data.Search,
           loading: false,
         })
-      );
+      )
+      .catch((err) => {
+        console.error(err);
+        this.setState({ loading: false });
+      });
   };
 
   render() {
